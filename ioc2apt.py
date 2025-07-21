@@ -1,5 +1,7 @@
 import argparse
-from enrichers import otx, threatfox, mitre_attack
+from enrichers.otx import query_otx
+from enrichers.threatfox import query_threatfox
+from enrichers.mitre_attack import load_mitre_attack, map_ttps
 
 def main():
     parser = argparse.ArgumentParser(description="IOC-to-APT enrichment CLI tool")
@@ -10,17 +12,17 @@ def main():
     print(f"\n🔎 IOC: {args.ioc}")
 
     # Enrich via OTX
-    otx_results = otx.query_otx(args.ioc, args.otx_key)
+    otx_results = query_otx(args.ioc, args.otx_key)
 
     # Enrich via ThreatFox
-    tf_results = threatfox.query_threatfox(args.ioc)
+    tf_results = query_threatfox(args.ioc)
 
     # Collect all TTPs and normalize
     all_ttps = set(otx_results.get("ttps", []) + tf_results.get("ttps", []))
 
     # Map TTPs to tactics and descriptions
-    mitre_map = mitre_attack.load_mitre_attack()
-    mapped_ttps = mitre_attack.map_ttps(all_ttps, mitre_map)
+    mitre_map = load_mitre_attack()
+    mapped_ttps = map_ttps(all_ttps, mitre_map)
 
     print("\n🧠 MITRE ATT&CK Mapping:")
     for tid, data in mapped_ttps.items():
