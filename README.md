@@ -1,3 +1,5 @@
+# NEED TO RUN IN VENV -- EDIT THE README
+
 # IOC to APT Enricher
 A lightweight CLI tool that enriches Indicators of Compromise (IOCs) with contextual threat intelligence, including associated APT groups, malware families, and MITRE ATT&CK TTPs.
 
