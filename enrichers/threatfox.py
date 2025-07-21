@@ -9,7 +9,11 @@ def query_threatfox(ioc):
     Returns a dict: {"actors": [...], "malware": [...], "ttps": [...]}
     """
     try:
-        response = requests.post(THREATFOX_API_URL, data={"query": "search_ioc", "search_term": ioc})
+        response = requests.post(
+        THREATFOX_API_URL,
+        data={"query": "search_ioc", "search_term": ioc},
+        headers={"Content-Type": "application/x-www-form-urlencoded"}
+        )
         if response.status_code != 200:
             print(f"❌ ThreatFox query failed: {response.status_code}")
             return {"actors": [], "malware": [], "ttps": []}
