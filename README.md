@@ -5,9 +5,13 @@ veCTIon is a comprehensive threat intelligence enrichment tool that analyzes Ind
 
 ## Features:
 🔍 **Multi-Source Intelligence**: Aggregates data from multiple threat intelligence platforms
+
 🎯 **APT Attribution**: Maps malware families to known threat actors and APT groups
+
 ⚔️ **MITRE ATT&CK TTP Integration**: Provides TTPs organized by threat actor and tactic
+
 🚀 **Scalable Architecture**: Easy to add new threat intelligence sources
+
 ⚙️ **Config-Driven**: Simple configuration file for API keys
 
 ## Supported IOC Types
