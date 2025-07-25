@@ -1,0 +1,17 @@
+# veCTIon API Configuration
+# Add your API keys below (remove the # and add your key)
+
+# VirusTotal API Key
+#vt-key = your_api_key_here
+
+# URLhaus API Key
+#urlhaus-key = your_api_key_here
+
+# Hybrid Analysis API Key
+#ha-key = your_api_key_here
+
+# AlienVault OTX API Key
+#otx-key = your_api_key_here
+
+# MalwareBazaar API Key
+#mb-key = your_api_key_here
