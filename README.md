@@ -92,7 +92,7 @@ options:
 
 ### Example Output:
 ```
-📍 IOC: http://almawadatours.com/hun.bin
+📍 IOC: hXXp://almawadatours[.]com/hun[.]bin
 🦠 Malware: agenttesla, guloader
 👤 Threat Actor: APT33
 ⚔️  TTPs by Threat Actor:
