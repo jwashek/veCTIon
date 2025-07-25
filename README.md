@@ -229,7 +229,7 @@ MALWARE_TO_APT = {
 }
 ```
 ### Updating MITRE ATT&CK Data:
-Download the latest enterprise-attack.json from MITRE and replace `data/enterprise-attack.json`.
+Download the latest [enterprise-attack.json](https://github.com/mitre-attack/attack-stix-data/blob/master/enterprise-attack/enterprise-attack.json) from MITRE and replace `data/enterprise-attack.json`.
 
 ## Contributing
 1. Fork the repository
