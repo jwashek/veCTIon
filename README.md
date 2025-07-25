@@ -1,7 +1,7 @@
 # veCTIon
 > Follow the vector. Unveil the threat.
 
-veCTIon is a comprehensive threat intelligence enrichment tool that analyzes Indicators of Compromise (IOCs) and provides detailed attribution including malware families, threat actors, and MITRE ATT&CK TTPs.
+veCTIon (named for: "vectors for CTI" and a play on the word "vection", meaning "movement experienced by a stationary observer") is a comprehensive threat intelligence enrichment tool that analyzes Indicators of Compromise (IOCs) and provides detailed attribution including malware families, threat actors, and MITRE ATT&CK TTPs. The idea is to tell the story of an IOC by mapping it to malware, drawing potential APTs that might utilize the IOC, and pull their specific TTPs they tend to carry out in their attacks.
 
 ## Features
 🔍 **Multi-Source Intelligence**: Aggregates data from multiple threat intelligence platforms
