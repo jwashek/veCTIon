@@ -3,7 +3,7 @@ Follow the vector. Unveil the threat.
 
 veCTIon is a comprehensive threat intelligence enrichment tool that analyzes Indicators of Compromise (IOCs) and provides detailed attribution including malware families, threat actors, and MITRE ATT&CK TTPs.
 
-## Features:
+## Features
 🔍 **Multi-Source Intelligence**: Aggregates data from multiple threat intelligence platforms
 
 🎯 **APT Attribution**: Maps malware families to known threat actors and APT groups
@@ -29,14 +29,14 @@ veCTIon is a comprehensive threat intelligence enrichment tool that analyzes Ind
 - AlienVault OTX - API key required
 - Malware Hash Registry (MHR) - Free hash lookups
 
-## Installation:
+## Installation
 ### Prerequisites:
 - Python 3.7 or higher
 - (Optional, but recommended) API Keys for Threat Intelligence Sources
 
 ### Clone and Install:
 ```bash
-git clone https://github.com/yourusername/veCTIon.git
+git clone https://github.com/jwashek/veCTIon.git
 cd veCTIon
 pip install -r requirements.txt
 ```
