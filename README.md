@@ -92,23 +92,64 @@ options:
 
 ### Example Output:
 ```
-📍 IOC: malicious-domain.com
-🦠 Malware: sharp_panda, soul
-👤 Threat Actor: APT19, Emissary Panda, Iron Tiger, Sharp Panda
+📍 IOC: http://almawadatours.com/hun.bin
+🦠 Malware: agenttesla, guloader
+👤 Threat Actor: APT33
 ⚔️  TTPs by Threat Actor:
-    👤 APT19:
+    👤 APT33:
+      📋 Collection:
+        • T1560.001: Archive via Utility
       📋 Command And Control:
         • T1132.001: Standard Encoding
+        • T1573.001: Symmetric Cryptography
+        • T1571: Non-Standard Port
         • T1071.001: Web Protocols
-      📋 Defense Evasion:
-        • T1218.011: Rundll32
-        • T1027.013: Encrypted/Encoded File
-    👤 Emissary Panda:
-      📋 Collection:
-        • T1056.001: Keylogging
-        • T1074.001: Local Data Staging
+        • T1105: Ingress Tool Transfer
       📋 Credential Access:
-        • T1003.002: Security Account Manager
+        • T1003.004: LSA Secrets
+        • T1040: Network Sniffing
+        • T1555: Credentials from Password Stores
+        • T1555.003: Credentials from Web Browsers
+        • T1003.001: LSASS Memory
+        • T1110.003: Password Spraying
+        • T1003.005: Cached Domain Credentials
+        • T1552.001: Credentials In Files
+        • T1552.006: Group Policy Preferences
+      📋 Defense Evasion:
+        • T1027.013: Encrypted/Encoded File
+        • T1078: Valid Accounts
+        • T1078.004: Cloud Accounts
+      📋 Discovery:
+        • T1040: Network Sniffing
+      📋 Execution:
+        • T1053.005: Scheduled Task
+        • T1204.002: Malicious File
+        • T1059.001: PowerShell
+        • T1203: Exploitation for Client Execution
+        • T1059.005: Visual Basic
+        • T1204.001: Malicious Link
+      📋 Exfiltration:
+        • T1048.003: Exfiltration Over Unencrypted Non-C2 Protocol
+      📋 Initial Access:
+        • T1566.002: Spearphishing Link
+        • T1566.001: Spearphishing Attachment
+        • T1078: Valid Accounts
+        • T1078.004: Cloud Accounts
+      📋 Persistence:
+        • T1053.005: Scheduled Task
+        • T1546.003: Windows Management Instrumentation Event Subscription
+        • T1547.001: Registry Run Keys / Startup Folder
+        • T1078: Valid Accounts
+        • T1078.004: Cloud Accounts
+      📋 Privilege Escalation:
+        • T1053.005: Scheduled Task
+        • T1546.003: Windows Management Instrumentation Event Subscription
+        • T1547.001: Registry Run Keys / Startup Folder
+        • T1078: Valid Accounts
+        • T1068: Exploitation for Privilege Escalation
+        • T1078.004: Cloud Accounts
+      📋 Resource Development:
+        • T1588.002: Tool
 ```
 
 ## Project Structure
